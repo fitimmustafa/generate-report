@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 
 type ModalProps = {
@@ -70,10 +71,11 @@ const Modal: React.FC<ModalProps> = ({
         <div>
           {images.map((image, index) => (
             <div key={index}>
-              <img
+              <Image
                 src={URL.createObjectURL(image)}
-                alt="Preview"
-                style={{ width: 100 }}
+                alt={`Uploaded image ${index + 1}`}
+                width={100}
+                height={100}
               />
               <p>{descriptions[index]}</p>
               <button onClick={() => removeImageAndDescription(index)}>

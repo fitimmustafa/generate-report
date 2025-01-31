@@ -7,7 +7,7 @@ type FormData = {
   email: string;
   oferta: string;
   date: string;
-  image?: File | null;
+  image?: File | string | null;
   profili: string;
   ngjyraProfilit: string;
   xhami: string;
