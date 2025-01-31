@@ -1,13 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
-import {
-  Document,
-  Page,
-  Text,
-  View,
-  StyleSheet,
-  Image,
-} from "@react-pdf/renderer";
+import Image from "next/image";
+import { Document, Page, Text, View, StyleSheet } from "@react-pdf/renderer";
 
 type PDFDocumentProps = {
   name: string;
@@ -158,7 +152,7 @@ const PDFDocument: React.FC<PDFDocumentProps> = ({
   <Document>
     <Page style={styles.page}>
       {/* Logo */}
-      <Image style={styles.logo} src="/nura-logo.jpg" />
+      <Image alt="nuralogo" style={styles.logo} src="/nura-logo.jpg" />
 
       {/* Company Contacts */}
       <View style={styles.contactSection}>
@@ -227,7 +221,7 @@ const PDFDocument: React.FC<PDFDocumentProps> = ({
     </Page>
     <Page style={styles.page}>
       <View style={styles.imageWithTextContainer}>
-        <Image style={styles.profiliImage} src={img} />
+        <Image alt="img" style={styles.profiliImage} src={img} />
         <View style={styles.textGroup}>
           <Text style={styles.profiliText}>Profili: {profili}</Text>
           <Text style={styles.profiliText}>
