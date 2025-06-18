@@ -1,36 +1,183 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nura - Sistema e Ofertave
 
-## Getting Started
+Një aplikacion Next.js për krijimin dhe menaxhimin e ofertave për produkte të dyerve dhe dritareve.
 
-First, run the development server:
+## 🚀 Karakteristikat
+
+### ✨ Karakteristikat Kryesore
+
+- **🏗️ Krijimi i Ofertave**: Krijimi i ofertave të detajuara me informacione të plota të produktit
+- **💰 Sistemi i Çmimeve (Qmimi)**: Sistemi i plotë i çmimeve me kalkulime automatike
+  - Çmimi për njësi (qmimi)
+  - Sasia
+  - Totali automatik për produkt
+  - Totali i përgjithshëm i ofertës
+- **📊 Dropdown të Shumëfishta**: Dropdown të avancuara që lejojnë zgjedhjen e shumë opsioneve
+- **🎨 Template të Produkteve**: Template të paracaktuara për produktet më të përdorura
+- **📱 UI Modern**: Ndërfaqe e përdoruesit moderne dhe responsive
+- **📋 Shabllonet e Produkteve**: Template të gatshme me çmime dhe specifikime
+
+### 🏷️ Kategoritë e Produkteve
+
+1. **Derë e mbrendshme** - €350.00
+2. **Derë e Hyrjes** - €650.00  
+3. **Derë e Garazhës** - €850.00
+4. **Derë e mbrendshme MDF** - €280.00
+
+### 🔧 Opsionet e Produkteve
+
+Aplikacioni ofron një gamë të gjerë opsionesh për çdo produkt:
+
+#### **Tipi i Produktit**
+- me elektomotor, me shirk-litar, Antrazit, Golden Oak
+- Profili, Alumin, Alumin Termo, GEALAN S9000 German profiles
+- MDF 40mm+6mm
+
+#### **Specifikime Teknike**
+- **Hapja Roletneteve**: Bardh, Antrazit-Bardh, Antrazit, Golden Oak, Spas doelloss
+- **Ngjyra e Roletneteve**: Bardh, Antrazit-Bardh, Antrazit, Golden Oak, AGB, Cilinder, Çeles-Magnet
+- **Fletëzat e Roletneteve**: Bardh, Antrazit-Bardh, Antrazit, Golden Oak, GEALAN S9000 German profiles
+- **Profili**: Alumin, Alumin-Panel, MDF
+- **Ngjyra e Profilit**: Bardh, Antrazit-Bardh, Antrazit, Golden Oak, Sigjenja, PSK SISTEM, HS SISTEM
+- **Mekanizmat**: Sigjenja, PSK SISTEM, HS SISTEM, Hoppe, PSK Panel, Sendvic Panel 40 mm, AGB
+- **Dorzat**: Hoppe, Pvc GEALAN S9000, Pvc Panel, Cilinder, Çeles-Magnet
+- **Mbushja**: Pvc Panel, Sendvic Panel 40 mm, MDF
+- **Llavjet e Braves**: Lloji i braves, Mbyllja e braves, 2 cope
+- **Mekanizmat e Braves**: Mekanizmat i braves, Pvc Panel zbukurues, Sendvic Panel 40 mm, Cilinder: Magnet
+- **Qelsat**: Qelsat, 3 cope, 2 cope, 3D
+- **Bagjlamat**: Marc, Stubina, Me 3 mbyllje, Të koduar 5 Cope, Telekomanda, Të bllokuara, Të doellossa 3D
+
+### 🎯 Dropdown të Shumëfishta
+
+- **Zgjedhje të Shumta**: Mundësia për të zgjedhur shumë opsione nga lista
+- **Vlera të Personalizuara**: Shtoni vlera të reja që nuk janë në listë
+- **Chip UI**: Shfaqja e zgjedhjeve si chip-a që mund të hiqen lehtë
+- **Kontrolle Intuitive**: Interface e thjeshtë për menaxhimin e zgjedhjeve
+
+### 💳 Sistemi i Çmimeve
+
+- **Qmimi (€)**: Çmimi për njësi në Euro
+- **Sasia**: Numri i njësive
+- **Totali Automatik**: Kalkulohet automatikisht (Qmimi × Sasia)
+- **Totali i Përgjithshëm**: Shuma e të gjithë produkteve
+- **Statistika të Shpejta**: Vështrimi i statistikave në kohë reale
+
+### 📊 Statistikat dhe Analizat
+
+- **Numri i Produkteve**: Sa produkte ka në ofertë
+- **Totali**: Vlera totale e ofertës
+- **Mesatarja**: Çmimi mesatar për produkt
+- **Artikujt**: Numri total i artikujve (sasia)
+
+### 📄 Gjenerimi i PDF-së
+
+- **PDF Profesional**: Gjeneron PDF të formatuara profesionalisht
+- **Detajet e Produkteve**: Përfshin të gjitha specifikacionet
+- **Informatat e Çmimeve**: Shfaq çmimet, sasitë dhe totalet
+- **Logo dhe Brandim**: Përfshin logon dhe informatat e kompanisë
+- **Tabela e Çmimeve**: Përmbledhje e detajuar e çmimeve
+
+### 💾 Ruajtja dhe Eksportimi
+
+- **Ruajtje Lokale**: Ruajtja në localStorage të browser-it
+- **Eksport JSON**: Eksportimi i të dhënave si JSON
+- **PDF Download**: Shkarkimi i ofertës si PDF
+- **Backup dhe Restore**: Mundësia për backup dhe restaurim
+
+### 🖼️ Menaxhimi i Imazheve
+
+- **Upload i Imazheve**: Ngarkimi i imazheve për çdo produkt
+- **Preview**: Shikimi paraprak i imazheve
+- **Kompresimi**: Kompresimi automatik për PDF
+- **Formatet e Mbështetura**: JPG, PNG, WebP
+
+## 🛠️ Teknologjitë e Përdorura
+
+- **Next.js 15**: Framework React me App Router
+- **TypeScript**: Type safety dhe developer experience
+- **Tailwind CSS**: Styling modern dhe responsive
+- **jsPDF**: Gjenerimi i PDF-ve
+- **LocalStorage**: Ruajtja lokale e të dhënave
+- **HTML5 File API**: Ngarkimi i imazheve
+
+## 🚀 Instalimi dhe Përdorimi
+
+### Instalimi
+
+```bash
+npm install
+```
+
+### Zhvillimi
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Hapni [http://localhost:3000](http://localhost:3000) në browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build për Prodhim
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📋 Si të Përdorni
 
-To learn more about Next.js, take a look at the following resources:
+1. **Krijoni Ofertë të Re**:
+   - Shkruani të dhënat e klientit
+   - Zgjidhni template ose krijoni produkt nga e para
+   - Përdorni dropdown të shumëfishta për specifikime të detajuara
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Shtoni Çmime**:
+   - Shkruani çmimin për njësi në fushën "Qmimi (€)"
+   - Përcaktoni sasinë
+   - Totali kalkulohet automatikisht
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Përdorni Template**:
+   - Klikoni në një nga template të paracaktuara
+   - Modifikoni sipas nevojës
+   - Shtoni ose hiqni specifikime
 
-## Deploy on Vercel
+4. **Eksportoni Ofertën**:
+   - "Ruaj ofertën" - për ruajtje lokale
+   - "Shkarko PDF" - për PDF profesional
+   - "Exporto JSON" - për backup të dhënash
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Karakteristikat e UI
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Design Modern**: Interface e pastër dhe moderne
+- **Responsive**: Funksionon në desktop, tablet dhe mobile
+- **Aksesibilitet**: E aksesueshme për të gjithë përdoruesit
+- **Performance**: Optimizuar për performancë të shkëlqyer
+- **Animacione**: Transicione dhe animacione të buta
+
+## 📊 Analiza e Të Dhënave
+
+Aplikacioni ofron analiza të detajuara:
+- Statistika të shpejta në krye të formës
+- Përmbledhje çmimesh për çdo produkt
+- Totali i përgjithshëm me breakdown
+- Analizë e sasive dhe mesatareve
+
+## 🔮 Karakteristika të Ardhshme
+
+- [ ] Integrim me sistem inventory
+- [ ] Email automation për dërgimin e ofertave
+- [ ] Templating engine i avancuar
+- [ ] Analiza të avancuara dhe raporte
+- [ ] Multi-language support
+- [ ] Integrim me sistem CRM
+
+## 🤝 Kontributi
+
+Kontributet janë të mirëpritura! Ju lutemi hapni një issue ose dërgoni një pull request.
+
+## 📝 Licensa
+
+MIT License - shihni [LICENSE](LICENSE) për detaje.
+
+---
+
+**Zhvilluar me ❤️ për Nura DOO**
